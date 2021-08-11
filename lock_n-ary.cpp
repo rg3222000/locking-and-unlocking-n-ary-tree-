@@ -107,10 +107,16 @@ bool lock(nary* root,int uid,string s,int m)
        }
     }
      nary* temp2=temp1;
+		
+      if(islockk(temp1)&&!temp1->canlock)
+       { 
+    	return false;
+       }
+	temp1=temp1->parent;	
     while(temp1!=NULL)
     {
      
-      if(islockk(temp1)&&!temp1->canlock)
+      if(islockk(temp1))
        { 
     	return false;
        }
