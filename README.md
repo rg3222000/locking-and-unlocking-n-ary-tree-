@@ -1,4 +1,4 @@
-# locking-and-unlocking-n-ary-tree\
+# locking-and-unlocking-n-ary-tree
 n-ary tree that takes in number of children that is n from the user alongside the number of nodes.\
 # The functions defined on this tree are as follows.\
 islock()- returns true if a given node is locked and false if it is not. A node is locked if lock() has successfully executed for the node.\
